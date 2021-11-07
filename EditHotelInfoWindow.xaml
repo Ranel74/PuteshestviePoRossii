@@ -1,0 +1,32 @@
+﻿<Window x:Class="PuteshestviePoRossiiGilyazov.EditHotelInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PuteshestviePoRossiiGilyazov"
+        mc:Ignorable="d"
+        Title="Окно редактирования отеля" Height="600" Width="1000" MinHeight="600" MinWidth="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="Название отеля:" FontSize="16" FontFamily="Comic Sans MS" Grid.Row="0" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+        <Label Content="Количество звезд:" FontSize="16" FontFamily="Comic Sans MS" Grid.Row="1" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+        <Label Content="Описание отеля:" FontSize="16" FontFamily="Comic Sans MS" Grid.Row="2" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+        <Label Content="Страна:" FontSize="16" FontFamily="Comic Sans MS" Grid.Row="3" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Center"></Label>
+        <TextBox x:Name="TxtNameHotel" FontSize="16" FontFamily="Comic Sans MS" Grid.Row="0" Grid.Column="1" Width="200" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+        <TextBox x:Name="TxtCountStars" FontSize="16" FontFamily="Comic Sans MS" Grid.Row="1" Grid.Column="1" Width="200" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+        <TextBox x:Name="TxtDescriptionHotel" FontSize="16" FontFamily="Comic Sans MS" Grid.Row="2" Grid.Column="1" Width="200" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+        <ComboBox x:Name="CmbNameCountry" FontSize="16" FontFamily="Comic Sans MS" Grid.Row="3" Grid.Column="1" DisplayMemberPath="Name" Width="200" HorizontalAlignment="Left" VerticalAlignment="Center"></ComboBox>
+        <Button x:Name="BtnDeleteHotel" FontSize="16" FontFamily="Comic Sans MS" Click="BtnDeleteHotel_Click" Content="Удалить" Grid.Row="4" Grid.Column="0" Width="200" Height="70" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Center"></Button>
+        <Button x:Name="BtnUpdateHotelInfo" FontSize="16" FontFamily="Comic Sans MS" Click="BtnUpdateHotelInfo_Click" Content="Обновить" Grid.Row="4" Grid.Column="1" Width="200" Height="70" HorizontalAlignment="Left" VerticalAlignment="Center"></Button>
+    </Grid>
+</Window>
